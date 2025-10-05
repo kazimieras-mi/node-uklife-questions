@@ -22,11 +22,13 @@ A Node.js app that builds a static site with Life in the UK–style quizzes desi
 ### Prerequisites
 
 * Node.js and npm installed
+* Git installed
+* An OpenAI API key
 
 ### Install
 
 ```bash
-git clone https://github.com/kazimieras-mi/node-uklife-questions/
+git clone https://github.com/kazimieras-mi/node-uklife-questions
 cd node-uklife-questions
 npm install
 ```
