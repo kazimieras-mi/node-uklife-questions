@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../res/styles.css">
+</head>
+<body>
+    <header>
+        <h1>UK Life Quiz</h1>
+        <p>A challenging unofficial quiz on topics of 🇬🇧 Life in the UK test, with additional context for self-study and hundreds of questions.</p>
+    </header>
+    <main>
+        <section>
+            <h2 id="question"></h2>
+            <form id="answer-form">
+                <fieldset>
+                    <legend>Select Your Answer:</legend>
+                    <input type="radio" id="option1" name="answer" value="0" required>
+                    <label for="option1" id="answer1">Option 1</label><br>
+                    <input type="radio" id="option2" name="answer" value="1">
+                    <label for="option2" id="answer2">Option 2</label><br>
+                    <input type="radio" id="option3" name="answer" value="2">
+                    <label for="option3" id="answer3">Option 3</label><br>
+                    <input type="radio" id="option4" name="answer" value="3">
+                    <label for="option4" id="answer4">Option 4</label><br>
+                </fieldset>
+                <button type="submit" id="check-button" class="button">Check</button>
+            </form>
+        </section>
+        <section>
+            <div id="proceed-area">
+                <p id="result-correct">🎉 Correct!</p>
+                <p id="result-incorrect">❌ Incorrect, the correct answer was <span class="correct-answer"></span>.</p>
+                <p id="explanation" class="newlines"></p>
+                <p>Learn more: <span id="learn-more-links"></span>.</p>
+                <a href="#" id="previous-question-button" class="button">Previous</a>
+                <a href="#" id="random-question-button" class="button">Random</a>
+                <a href="#" id="next-question-button" class="button">Next</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Content on this site may not be reproduced without permission. Rights Reserved.</p>
+    </footer>
+    <script>
+        const question = {{question_json}};
+        const numQuestions = {{num_questions}};
+        const currentQuestionId = {{current_question_num}};
+    </script>
+    <script src="../res/script.js"></script>
+</body>
+</html>
